@@ -52,21 +52,25 @@
 
 @media screen and (min-resolution: 2x) {
   .hero-image {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)),
-        url(/img/hero-images/hero-mob-img@2x.webp);
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(/img/hero-images/hero-mob-img@2x.webp);
   }
 }
-
 
 @media screen and (min-width: 375px) {
   .hero-title {
     font-size: 52px;
+    max-width: 100%;
     max-width: 335px;
   }
 
   .hero-text {
-    max-width: 330px;
+    max-width: 335px;
+    font-size: 14px;
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
     padding-left: 20px;
@@ -74,21 +78,21 @@
   }
 }
 
-@media screen and (max-width: 374px) {
+/* @media screen and (max-width: 374px) {
   .hero-title {
-      font-size: 42px;
-      max-width: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .hero-text {
-      max-width: 330px;
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-left: 0;
-    }
-}
+    font-size: 42px;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-text {
+    max-width: 330px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0;
+  }
+} */
 
 @media screen and (min-width: 768px) {
   .hero-container-left {
@@ -124,14 +128,16 @@
       ),
       url(/img/hero-images/hero-tablet-img.webp);
   }
-    
-      @media screen and (min-resolution: 2x) {
-        .hero-image {
-          background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-                rgba(20, 20, 20, 0.2)),
-              url(/img/hero-images/hero-tablet-img@2x.webp);
-        }
+
+  @media screen and (min-resolution: 2x) {
+    .hero-image {
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(/img/hero-images/hero-tablet-img@2x.webp);
     }
+  }
 }
 @media screen and (min-width: 1280px) {
   .hero {
@@ -174,11 +180,13 @@
       url(/img/hero-images/hero-desk-img.webp);
   }
 
-    @media screen and (min-resolution: 2x) {
-      .hero-image {
-          background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-                rgba(20, 20, 20, 0.2)),
-              url(/img/hero-images/hero-desk-img@2x.webp);
-      }
+  @media screen and (min-resolution: 2x) {
+    .hero-image {
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(/img/hero-images/hero-desk-img@2x.webp);
+    }
   }
 }
